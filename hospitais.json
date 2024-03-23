@@ -1,0 +1,67 @@
+[
+    {
+        "idHospital" : 1,
+        "nome": "HospMoinhos",
+        "endereco": {
+            "rua": "Av. Ipiranga",
+            "numero": 1000,
+            "bairro": "Partenon",
+            "uf": "RS"
+        },
+        "salas": [
+            {
+                "numeroSala": 301,
+                "ala": 30,
+                "andar": 3,
+                "metragem": 20 
+            },
+            {
+                "numeroSala": 302,
+                "ala": 30,
+                "andar": 3,
+                "metragem": 20 
+            },
+            {
+                "numeroSala": 201,
+                "ala": 20,
+                "andar": 2,
+                "metragem": 25 
+            }
+        ]
+
+    },
+    {
+        "idHospital" : 1,
+        "nome": "HospHSL",
+        "endereco": {
+            "rua": "Av. Ramiro Barcelos",
+            "numero": 2000,
+            "uf": "RS"
+        },
+        "vagasEstacionamento": [ 1, 2, 3, 4 ],
+        "salas": [
+            {
+                "numeroSala": 301,
+                "ala": 20,
+                "andar": 3,
+                "metragem": 20 
+            },
+            {
+                "numeroSala": 302,
+                "ala": 10,
+                "andar": 2,
+                "metragem": 20 
+            },
+            {
+                "numeroSala": 201,
+                "ala": 10,
+                "andar": 2,
+                "metragem": 25 
+            }
+        ]
+        
+    }
+    
+    
+    
+]

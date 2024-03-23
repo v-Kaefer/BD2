@@ -1,0 +1,24 @@
+[
+    {
+
+        "idCirurgia": 1,
+        "descProcedimento": "Joelho",
+        "dataHora": "01/01/0001",
+        "MaterialCirurgia": [
+            {
+                "quantidadeUtilizada": 10,
+                "materiais": 22,
+                "coberturas": [
+                    {
+                        "percentual": 100,
+                        "planoSaude": {
+                            "idPaciente": 123,
+                            "idPlanoSaude": 99
+                        }
+                    }
+                ]
+
+            }
+        ]
+    }
+]
