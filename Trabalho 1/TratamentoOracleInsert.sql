@@ -21,19 +21,19 @@ INSERT ALL
 SELECT * FROM DUAL;
 
 INSERT ALL
-    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('001', 10.50, 50.25, 'Basic')
+    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('001', 10.50, 5.25,  'Basic')
     INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('002', 200.75, 75.50, 'First Class')
     INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('003', 150.25, 60.10, 'Classic')
     INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('004', 120.30, 55.15, 'Basic')
-    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('005', 21.80, 80.60, 'Basic')
+    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('005', 21.80, 8.60,  'Basic')
     INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('006', 155.35, 65.20, 'Classic')
-    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('007', 13.40, 60.20, 'Basic')
-    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('008', 22.85, 85.70, 'Classic')
+    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('007', 13.40, 6.20,  'Basic')
+    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('008', 22.85, 9.70,  'Classic')
     INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('009', 170.45, 70.30, 'First Class')
-    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('010', 14.50, 65.25, 'Basic')
+    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('010', 14.50, 6.25,  'Basic')
     INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('011', 230.90, 90.80, 'First Class')
-    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('012', 18.55, 75.40, 'Basic')
-    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('013', 15.60, 70.30, 'Basic')
+    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('012', 18.55, 12.40, 'Basic')
+    INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('013', 15.60, 7.30,  'Basic')
     INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('014', 240.95, 95.90, 'First Class')
     INTO Viagem (Id, Kms, Valor, Padrao) VALUES ('015', 190.65, 80.50, 'First Class')
 SELECT * FROM DUAL;
