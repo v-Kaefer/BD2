@@ -15,8 +15,10 @@ CREATE TABLE Passageiro (
     Email VARCHAR(100),
     Telefone VARCHAR(20),
     Bairro VARCHAR(30),
+    Cartao VARCHAR(16),
     Meio_Pagamento CHAR,
     CONSTRAINT UNIQUECPF UNIQUE (CPF),
+    CONSTRAINT UNIQUECARTAO UNIQUE (Cartao)
     CONSTRAINT UNIQUETEL UNIQUE (TELEFONE)
 );
 
@@ -30,6 +32,7 @@ CREATE TABLE Viagem (
 
 CREATE TABLE Urbana (
     Bairro_Partida VARCHAR(30),
+    Bairro_Destino VARCHAR(30),
     fk_Viagem_Id CHAR(100) PRIMARY KEY
 );
 
