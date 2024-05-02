@@ -15,38 +15,38 @@ CREATE TABLE Passageiro (
     Telefone VARCHAR(20),
     Bairro VARCHAR(30),
     Cartao VARCHAR(16),
-    Meio_Pagamento CHAR,
+    Meio_Pagamento VARCHAR(10),
     CONSTRAINT UNIQUECARTAO UNIQUE (Cartao),
     CONSTRAINT UNIQUETEL UNIQUE (TELEFONE)
 );
 
 CREATE TABLE Viagem (
-    Id CHAR PRIMARY KEY,
+    Id VARCHAR(100) PRIMARY KEY,
     Kms FLOAT,
     Valor FLOAT,
-    Padrao CHAR
+    Padrao VARCHAR(20)
 );
 
 CREATE TABLE Urbana (
     Bairro_Partida VARCHAR(30),
     Bairro_Destino VARCHAR(30),
-    fk_Viagem_Id CHAR(100) PRIMARY KEY
+    fk_Viagem_Id VARCHAR(100) PRIMARY KEY
 );
 
 CREATE TABLE Interurbana (
     Taxa_Adicional FLOAT,
-    Cidade_Destino CHAR,
-    fk_Viagem_Id CHAR PRIMARY KEY
+    Cidade_Destino CHAR(30),
+    fk_Viagem_Id VARCHAR(100) PRIMARY KEY
 );
 
 CREATE TABLE Faz (
     fk_Carro_Codigo INTEGER,
-    fk_Viagem_Id CHAR
+    fk_Viagem_Id VARCHAR(100)
 );
 
 CREATE TABLE Usa (
     fk_Passageiro_CPF VARCHAR(11),
-    fk_Viagem_Id CHAR
+    fk_Viagem_Id VARCHAR(100)
 );
  
 ALTER TABLE Urbana ADD CONSTRAINT FK_Urbana_2
