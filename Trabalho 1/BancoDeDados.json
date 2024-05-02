@@ -1,0 +1,387 @@
+{
+    "Carro": [ 
+        {
+            "Codigo": 1,
+            "Placa": "ABC123",
+            "Marca": "Ford",
+            "Modelo": "Fiesta",
+            "Ano": 2015,
+            "Nome_Motorista": "João Dos Santos"
+        },
+        {
+            "Codigo": 2,
+            "Placa": "DEF456",
+            "Marca": "Chevrolet",
+            "Modelo": "Cruze",
+            "Ano": 2018,
+            "Nome_Motorista": "Maria Aparecida"
+        },
+        {
+            "Codigo": 3,
+            "Placa": "GHI789",
+            "Marca": "Volkswagen",
+            "Modelo": "Golf",
+            "Ano": 2019,
+            "Nome_Motorista": "Pedro Henrique"
+        },
+        {
+            "Codigo": 4,
+            "Placa": "JKL012",
+            "Marca": "Fiat",
+            "Modelo": "Uno",
+            "Ano": 2017,
+            "Nome_Motorista": "Ana Maria"
+        },
+        {
+            "Codigo": 5,
+            "Placa": "MNO345",
+            "Marca": "Renault",
+            "Modelo": "Kwid",
+            "Ano": 2016,
+            "Nome_Motorista": "Carlos Gomes"
+        }
+    ],
+    "Passageiro": [ 
+        {
+            "CPF": "12345678901",
+            "Nome": "Ana Maria",
+            "Email": "ana@email.com",
+            "Telefone": "987654321",
+            "Bairro": "Centro",
+            "Cartao": "1234567890123456",
+            "Meio_Pagamento": "Crédito"
+        },
+        {
+            "CPF": "23456789012",
+            "Nome": "Carlos Antonio",
+            "Email": "carlos@email.com",
+            "Telefone": "876543210",
+            "Bairro": "Partenon",
+            "Cartao": "2345678901234567",
+            "Meio_Pagamento": "Débito"
+        },
+        {
+            "CPF": "34567890123",
+            "Nome": "Mariana Da Silva",
+            "Email": "mariana@email.com",
+            "Telefone": "765432109",
+            "Bairro": "João Pessoa",
+            "Cartao": "3456789012345678",
+            "Meio_Pagamento": "Dinheiro"
+        },
+        {
+            "CPF": "45678901234",
+            "Nome": "Pedro Henrique",
+            "Email": "pedro@email.com",
+            "Telefone": "654321098",
+            "Bairro": "Carlos Gomes",
+            "Cartao": "4567890123456789",
+            "Meio_Pagamento": "Crédito"
+        },
+        {
+            "CPF": "56789012345",
+            "Nome": "Joana Valentina",
+            "Email": "joana@email.com",
+            "Telefone": "543210987",
+            "Bairro": "Cidade Baixa",
+            "Cartao": "5678901234567890",
+            "Meio_Pagamento": "Débito"
+        }
+    ],
+    "Viagem": [ 
+        {
+            "Id": "001",
+            "Kms": 10.50,
+            "Valor": 5.25,
+            "Padrao": "Basic"
+        },
+        {
+            "Id": "002",
+            "Kms": 200.75,
+            "Valor": 75.50,
+            "Padrao": "First Class"
+        },
+        {
+            "Id": "003",
+            "Kms": 150.25,
+            "Valor": 60.10,
+            "Padrao": "Classic"
+        },
+        {
+            "Id": "004",
+            "Kms": 120.30,
+            "Valor": 55.15,
+            "Padrao": "Basic"
+        },
+        {
+            "Id": "005",
+            "Kms": 21.80,
+            "Valor": 8.60,
+            "Padrao": "Basic"
+        },
+        {
+            "Id": "006",
+            "Kms": 155.35,
+            "Valor": 65.20,
+            "Padrao": "Classic"
+        },
+        {
+            "Id": "007",
+            "Kms": 13.40,
+            "Valor": 6.20,
+            "Padrao": "Basic"
+        },
+        {
+            "Id": "008",
+            "Kms": 22.85,
+            "Valor": 9.70,
+            "Padrao": "Classic"
+        },
+        {
+            "Id": "009",
+            "Kms": 170.45,
+            "Valor": 70.30,
+            "Padrao": "First Class"
+        },
+        {
+            "Id": "010",
+            "Kms": 14.50,
+            "Valor": 6.25,
+            "Padrao": "Basic"
+        },
+        {
+            "Id": "011",
+            "Kms": 230.90,
+            "Valor": 90.80,
+            "Padrao": "First Class"
+        },
+        {
+            "Id": "012",
+            "Kms": 18.55,
+            "Valor": 12.40,
+            "Padrao": "Basic"
+        },
+        {
+            "Id": "013",
+            "Kms": 15.60,
+            "Valor": 7.30,
+            "Padrao": "Basic"
+        },
+        {
+            "Id": "014",
+            "Kms": 240.95,
+            "Valor": 95.90,
+            "Padrao": "First Class"
+        },
+        {
+            "Id": "015",
+            "Kms": 190.65,
+            "Valor": 80.50,
+            "Padrao": "First Class"
+        }
+    ],
+    "Urbana": [ 
+        {
+            "Bairro_Partida": "Centro",
+            "Bairro_Destino": "Navegantes",
+            "fk_Viagem_Id": "001"
+        },
+        {
+            "Bairro_Partida": "Agronomia",
+            "Bairro_Destino": "Nonoai",
+            "fk_Viagem_Id": "003"
+        },
+        {
+            "Bairro_Partida": "Bela Vista",
+            "Bairro_Destino": "Medianeira",
+            "fk_Viagem_Id": "004"
+        },
+        {
+            "Bairro_Partida": "Humaitá",
+            "Bairro_Destino": "Bairro W",
+            "fk_Viagem_Id": "005"
+        },
+        {
+            "Bairro_Partida": "Independência",
+            "Bairro_Destino": "Campo Novo",
+            "fk_Viagem_Id": "006"
+        },
+        {
+            "Bairro_Partida": "Ipanema",
+            "Bairro_Destino": "Cascata",
+            "fk_Viagem_Id": "007"
+        },
+        {
+            "Bairro_Partida": "Jardim Botânico",
+            "Bairro_Destino": "Cristal",
+            "fk_Viagem_Id": "008"
+        },
+        {
+            "Bairro_Partida": "Jardim Isabel",
+            "Bairro_Destino": "Guarujá",
+            "fk_Viagem_Id": "010"
+        },
+        {
+            "Bairro_Partida": "Coronel Aparício Borges",
+            "Bairro_Destino": "Glória",
+            "fk_Viagem_Id": "012"
+        },
+        {
+            "Bairro_Partida": "Farrapos",
+            "Bairro_Destino": "Hípica",
+            "fk_Viagem_Id": "013"
+        }
+    ],
+    "Interurbana": [
+        {
+            "Taxa_Adicional": 0.00,
+            "Cidade_Destino": "Canoas",
+            "fk_Viagem_Id": "002"
+        },
+        {
+            "Taxa_Adicional": 5.75,
+            "Cidade_Destino": "Caxias do Sul",
+            "fk_Viagem_Id": "009"
+        },
+        {
+            "Taxa_Adicional": 0.00,
+            "Cidade_Destino": "Bagé",
+            "fk_Viagem_Id": "011"
+        },
+        {
+            "Taxa_Adicional": 0.00,
+            "Cidade_Destino": "Alegrete",
+            "fk_Viagem_Id": "014"
+        },
+        {
+            "Taxa_Adicional": 4.75,
+            "Cidade_Destino": "Camaquã",
+            "fk_Viagem_Id": "015"
+        }
+    ],
+    "Faz": [
+        {
+            "fk_Carro_Codigo": 1,
+            "fk_Viagem_Id": "001"
+        },
+        {
+            "fk_Carro_Codigo": 2,
+            "fk_Viagem_Id": "002"
+        },
+        {
+            "fk_Carro_Codigo": 3,
+            "fk_Viagem_Id": "003"
+        },
+        {
+            "fk_Carro_Codigo": 4,
+            "fk_Viagem_Id": "004"
+        },
+        {
+            "fk_Carro_Codigo": 5,
+            "fk_Viagem_Id": "005"
+        },
+        {
+            "fk_Carro_Codigo": 1,
+            "fk_Viagem_Id": "006"
+        },
+        {
+            "fk_Carro_Codigo": 2,
+            "fk_Viagem_Id": "007"
+        },
+        {
+            "fk_Carro_Codigo": 3,
+            "fk_Viagem_Id": "008"
+        },
+        {
+            "fk_Carro_Codigo": 4,
+            "fk_Viagem_Id": "009"
+        },
+        {
+            "fk_Carro_Codigo": 5,
+            "fk_Viagem_Id": "010"
+        },
+        {
+            "fk_Carro_Codigo": 1,
+            "fk_Viagem_Id": "011"
+        },
+        {
+            "fk_Carro_Codigo": 2,
+            "fk_Viagem_Id": "012"
+        },
+        {
+            "fk_Carro_Codigo": 3,
+            "fk_Viagem_Id": "013"
+        },
+        {
+            "fk_Carro_Codigo": 4,
+            "fk_Viagem_Id": "014"
+        },
+        {
+            "fk_Carro_Codigo": 5,
+            "fk_Viagem_Id": "015"
+        }
+    ],
+    "Usa": [
+        {
+            "fk_Passageiro_CPF": "12345678901",
+            "fk_Viagem_Id": "001"
+        },
+        {
+            "fk_Passageiro_CPF": "23456789012",
+            "fk_Viagem_Id": "002"
+        },
+        {
+            "fk_Passageiro_CPF": "34567890123",
+            "fk_Viagem_Id": "003"
+        },
+        {
+            "fk_Passageiro_CPF": "45678901234",
+            "fk_Viagem_Id": "004"
+        },
+        {
+            "fk_Passageiro_CPF": "56789012345",
+            "fk_Viagem_Id": "005"
+        },
+        {
+            "fk_Passageiro_CPF": "12345678901",
+            "fk_Viagem_Id": "006"
+        },
+        {
+            "fk_Passageiro_CPF": "23456789012",
+            "fk_Viagem_Id": "007"
+        },
+        {
+            "fk_Passageiro_CPF": "34567890123",
+            "fk_Viagem_Id": "008"
+        },
+        {
+            "fk_Passageiro_CPF": "45678901234",
+            "fk_Viagem_Id": "009"
+        },
+        {
+            "fk_Passageiro_CPF": "56789012345",
+            "fk_Viagem_Id": "010"
+        },
+        {
+            "fk_Passageiro_CPF": "12345678901",
+            "fk_Viagem_Id": "011"
+        },
+        {
+            "fk_Passageiro_CPF": "23456789012",
+            "fk_Viagem_Id": "012"
+        },
+        {
+            "fk_Passageiro_CPF": "34567890123",
+            "fk_Viagem_Id": "013"
+        },
+        {
+            "fk_Passageiro_CPF": "45678901234",
+            "fk_Viagem_Id": "014"
+        },
+        {
+            "fk_Passageiro_CPF": "56789012345",
+            "fk_Viagem_Id": "015"
+        }
+    ]
+}
+
