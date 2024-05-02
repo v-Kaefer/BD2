@@ -5,8 +5,7 @@ CREATE TABLE Carro (
     Modelo VARCHAR(20),
     Ano INTEGER,
     Nome_Motorista VARCHAR(30),
-    CONSTRAINT UNIQUEPLACA UNIQUE (Placa),
-    CONSTRAINT UNIQUECODIGO UNIQUE (Codigo)
+    CONSTRAINT UNIQUEPLACA UNIQUE (Placa)
 );
 
 CREATE TABLE Passageiro (
@@ -17,8 +16,7 @@ CREATE TABLE Passageiro (
     Bairro VARCHAR(30),
     Cartao VARCHAR(16),
     Meio_Pagamento CHAR,
-    CONSTRAINT UNIQUECPF UNIQUE (CPF),
-    CONSTRAINT UNIQUECARTAO UNIQUE (Cartao)
+    CONSTRAINT UNIQUECARTAO UNIQUE (Cartao),
     CONSTRAINT UNIQUETEL UNIQUE (TELEFONE)
 );
 
@@ -26,8 +24,7 @@ CREATE TABLE Viagem (
     Id CHAR PRIMARY KEY,
     Kms FLOAT,
     Valor FLOAT,
-    Padrao CHAR,
-    CONSTRAINT UNIQUEID UNIQUE (Id)
+    Padrao CHAR
 );
 
 CREATE TABLE Urbana (
@@ -61,11 +58,6 @@ ALTER TABLE Interurbana ADD CONSTRAINT FK_Interurbana_2
     FOREIGN KEY (fk_Viagem_Id)
     REFERENCES Viagem (Id)
     ON DELETE CASCADE;
- 
-ALTER TABLE Faz ADD CONSTRAINT FK_Faz_1
-    FOREIGN KEY (fk_Carro_Codigo)
-    REFERENCES Carro (Codigo);
-    /*ON DELETE RESTRICT é padrão no Oracle*/
  
 ALTER TABLE Faz ADD CONSTRAINT FK_Faz_2
     FOREIGN KEY (fk_Viagem_Id)
