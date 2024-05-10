@@ -4,7 +4,7 @@
 • Escreva os comandos SQL para inserir os registos no banco de dados Oracle.
 */
 
-INSERT INTO Carro (Codigo, Placa, Marca, Modelo, Ano, Nome_Motorista) 
+INSERT INTO Carro (Codigo, Placa, Marca, Modelo, Ano, Nome_Motorista)
     VALUES
     (1, 'ABC123', 'Ford', 'Fiesta', 2015, 'João Dos Santos'),
     (2, 'DEF456', 'Chevrolet', 'Cruze', 2018, 'Maria Aparecida'),
