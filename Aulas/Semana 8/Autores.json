@@ -1,0 +1,123 @@
+[
+    {
+        "nome": "Carlos",
+        "especialidade": "Contista",
+        "dataNascimento": "15-03-1985",
+        "genero": "M",
+        "livros": [
+            {
+                "titulo": "Contos de Mistério",
+                "isbn": "54321",
+                "numeroPaginas": 300,
+                "numeroEdicao": 2,
+                "anotacoes": [
+                    {
+                        "data": "20-05-2010",
+                        "pagina": 10,
+                        "texto": "Um livro intrigante"
+                    },
+                    {
+                        "data": "25-05-2010",
+                        "pagina": 50,
+                        "texto": "Final surpreendente"
+                    }
+                ],
+                "autores": [
+                    { "nome": "Carlos"},
+                    { "nome": "Denise"}
+                ],
+                "editora": "Histórias Fantásticas",
+                "genero": {
+                    "nome": "Ficção",
+                    "descricao": "Mistério e Suspense",
+                    "publicoPrincipal": "adultos"
+                }
+            },
+            {
+                "titulo": "Poesias da Alma",
+                "isbn": "98765",
+                "numeroPaginas": 150,
+                "numeroEdicao": 1,
+                "anotacoes": [
+                    {
+                        "data": "10-08-2020",
+                        "pagina": 5,
+                        "texto": "Versos emocionantes"
+                    }
+                ],
+                "autores": [
+                    "Mariana",
+                    "Carlos"
+                ],
+                "editora": "Sensibilidade Editorial",
+                "genero": {
+                    "nome": "Poesia",
+                    "descricao": "Reflexões sobre a vida",
+                    "publicoPrincipal": "todos"
+                }
+            }
+        ]
+    },
+    {
+        "nome": "Denise",
+        "especialidade": "Romancista",
+        "dataNascimento": "10-10-1990",
+        "genero": "F",
+        "livros": [
+            {
+                "titulo": "2001, uma odisseia no espaço",
+                "isbn": "12345",
+                "numeroPaginas": 1000,
+                "numeroEdicao": 1,
+                "anotacoes": [
+                    {
+                        "data": "10-10-2000",
+                        "pagina": 20,
+                        "texto": "Um bom livro"
+                    }
+                ],
+                "autores": [
+                    "Denise",
+                    "Joao"
+                ],
+                "editora": "Ciclo",
+                "genero": {
+                    "nome": "Ficção",
+                    "descricao": "Aventuras",
+                    "publicoPrincipal": "todos"
+                }
+            }
+        ]
+    },
+    {
+        "nome": "Mariana",
+        "especialidade": "Poetisa",
+        "dataNascimento": "20-07-1995",
+        "genero": "F",
+        "livros": [
+            {
+                "titulo": "Poesias da Alma",
+                "isbn": "98765",
+                "numeroPaginas": 150,
+                "numeroEdicao": 1,
+                "anotacoes": [
+                    {
+                        "data": "10-08-2020",
+                        "pagina": 5,
+                        "texto": "Versos emocionantes"
+                    }
+                ],
+                "autores": [
+                    "Mariana",
+                    "Carlos"
+                ],
+                "editora": "Sensibilidade Editorial",
+                "genero": {
+                    "nome": "Poesia",
+                    "descricao": "Reflexões sobre a vida",
+                    "publicoPrincipal": "todos"
+                }
+            }
+        ]
+    }
+]
