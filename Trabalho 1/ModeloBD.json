@@ -1,0 +1,58 @@
+{
+    "Carro": [ 
+        {
+            "Codigo": 1,
+            "Placa": "ABC123",
+            "Marca": "Ford",
+            "Modelo": "Fiesta",
+            "Ano": 2015,
+            "Nome_Motorista": "João Dos Santos"
+        }
+    ],
+    "Passageiro": [ 
+        {
+            "CPF": "12345678901",
+            "Nome": "Ana Maria",
+            "Email": "ana@email.com",
+            "Telefone": "987654321",
+            "Bairro": "Centro",
+            "Cartao": "1234567890123456",
+            "Meio_Pagamento": "Crédito"
+        }
+    ],
+    "Viagem": [ 
+        {
+            "Id": "001",
+            "Kms": 10.50,
+            "Valor": 5.25,
+            "Padrao": "Basic"
+        }
+    ],
+    "Urbana": [ 
+        {
+            "Bairro_Partida": "Centro",
+            "Bairro_Destino": "Navegantes",
+            "fk_Viagem_Id": "001"
+        }
+    ],
+    "Interurbana": [
+        {
+            "Taxa_Adicional": 0.00,
+            "Cidade_Destino": "Canoas",
+            "fk_Viagem_Id": "002"
+        }
+    ],
+    "Faz": [
+        {
+            "fk_Carro_Codigo": 1,
+            "fk_Viagem_Id": "001"
+        }
+    ],
+    "Usa": [
+        {
+            "fk_Passageiro_CPF": "12345678901",
+            "fk_Viagem_Id": "001"
+        }
+    ]
+}
+
