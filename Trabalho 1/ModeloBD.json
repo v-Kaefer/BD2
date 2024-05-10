@@ -25,34 +25,21 @@
             "Id": "001",
             "Kms": 10.50,
             "Valor": 5.25,
-            "Padrao": "Basic"
-        }
-    ],
-    "Urbana": [ 
-        {
-            "Bairro_Partida": "Centro",
-            "Bairro_Destino": "Navegantes",
-            "fk_Viagem_Id": "001"
-        }
-    ],
-    "Interurbana": [
-        {
-            "Taxa_Adicional": 0.00,
-            "Cidade_Destino": "Canoas",
-            "fk_Viagem_Id": "002"
-        }
-    ],
-    "Faz": [
-        {
-            "fk_Carro_Codigo": 1,
-            "fk_Viagem_Id": "001"
-        }
-    ],
-    "Usa": [
-        {
-            "fk_Passageiro_CPF": "12345678901",
-            "fk_Viagem_Id": "001"
+            "Padrao": "Basic",
+            "Urbana": [ 
+                {
+                    "Bairro_Partida": "Centro",
+                    "Bairro_Destino": "Navegantes",
+                    "fk_Viagem_Id": "001"
+                }
+            ],
+            "Interurbana": [
+                {
+                    "Taxa_Adicional": 0.00,
+                    "Cidade_Destino": "Canoas",
+                    "fk_Viagem_Id": "002"
+                }
+            ]
         }
     ]
 }
-
