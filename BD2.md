@@ -1,10 +1,9 @@
 ## NoSQL:
-Colections (equivale a) Tabela Relacional {Geralmente no plural}
+Collections (equivale a) Tabela Relacional {Geralmente no plural}
 
 ## Possibilidades de Relacionamentos:
 - Aninhamento/ Composição/Embutidos
 - Referência
-
 
 - Losângulo aberto: Agregação Simples
 - Documentos (Amarelos ligados a collections) [Equivale a "linha" SQL]
@@ -14,3 +13,12 @@ Colections (equivale a) Tabela Relacional {Geralmente no plural}
 
 
 ## MongoDB
+
+
+
+
+## Astah
+
+### Referências p/ modelagem
+
+- https://www.techighness.com/post/how-to-draw-no-sql-data-model-diagram/
