@@ -1,0 +1,133 @@
+db.Carro.aggregate([
+    {
+      $lookup: {
+        from: "Faz",
+        localField: "Codigo",
+        foreignField: "fk_Carro_Codigo",
+        as: "carro_faz"
+      }
+    },
+    {
+      $lookup: {
+        from: "Viagem",
+        localField: "carro_faz.fk_Viagem_Id",
+        foreignField: "Id",
+        as: "viagem"
+      }
+    },
+    {
+      $lookup: {
+        from: "Urbana",
+        localField: "viagem.Id",
+        foreignField: "fk_Viagem_Id",
+        as: "viagem_urbana"
+      }
+    },
+    {
+      $match: {
+        "viagem_urbana.Bairro_Partida": "Floresta"
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        Codigo: 1
+      }
+    }
+  ]
+);
+
+  
+
+
+db.Passageiro.aggregate([
+    {
+      $lookup: {
+        from: "Usa",
+        localField: "CPF",
+        foreignField: "fk_Passageiro_CPF",
+        as: "passageiro_usa"
+      }
+    },
+    {
+      $lookup: {
+        from: "Viagem",
+        localField: "passageiro_usa.fk_Viagem_Id",
+        foreignField: "Id",
+        as: "viagem"
+      }
+    },
+    {
+      $lookup: {
+        from: "Urbana",
+        localField: "viagem.Id",
+        foreignField: "fk_Viagem_Id",
+        as: "viagem_urbana"
+      }
+    },
+    {
+      $lookup: {
+        from: "Faz",
+        localField: "viagem.Id",
+        foreignField: "fk_Viagem_Id",
+        as: "viagem_faz"
+      }
+    },
+    {
+      $lookup: {
+        from: "Carro",
+        localField: "viagem_faz.fk_Carro_Codigo",
+        foreignField: "Codigo",
+        as: "carro"
+      }
+    },
+    {
+      $match: {
+        "viagem_urbana.Bairro_Partida": "$Bairro"
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        "Nome": 1,
+        "carro.Codigo": 1
+      }
+    }
+  ]
+);
+
+  
+db.Passageiro.aggregate([
+    {
+      $lookup: {
+        from: "Usa",
+        localField: "CPF",
+        foreignField: "fk_Passageiro_CPF",
+        as: "passageiro_usa"
+      }
+    },
+    {
+      $lookup: {
+        from: "Viagem",
+        localField: "passageiro_usa.fk_Viagem_Id",
+        foreignField: "Id",
+        as: "viagem"
+      }
+    },
+    {
+      $group: {
+        _id: { "CPF": "$CPF", "Nome": "$Nome" },
+        Total_Kms: { $sum: "$viagem.Kms" }
+      }
+    },
+    {
+      $project: {
+        "_id": 0,
+        "CPF": "$_id.CPF",
+        "Nome": "$_id.Nome",
+        "Total_Kms": 1
+      }
+    }
+  ]
+);
+  
